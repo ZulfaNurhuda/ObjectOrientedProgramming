@@ -1,0 +1,1 @@
+For this problem, no template file is provided. You will need to create the Java file yourself from scratch.

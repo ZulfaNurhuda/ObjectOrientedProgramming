@@ -1,0 +1,29 @@
+=== INITIAL OBJECTS ===
+[Photo] @pop_es | caption="sunset vibes" | likes=0 | comments=0 | shares=0 | hashtags=3 | useAI=false | useMusic=true
+[Photo] @kebin_binatang | caption="coffee time" | likes=0 | comments=0 | shares=0 | hashtags=1 | useAI=true | useMusic=false
+[Video] @neck_gro | caption="day in my life as an agent" | likes=0 | comments=0 | shares=0 | views=0 | durationSec=60 | useAI=false
+[Video] @dr.neroifa | caption="lab routine" | likes=0 | comments=0 | shares=0 | views=0 | durationSec=120 | useAI=false
+
+=== BASIC ACTIONS ===
+-> Photo: shareTo()
+Photo by @pop_es shared to kebin_binatang
+Photo by @kebin_binatang shared to dr.neroifa
+-> Photo: like() & comment()
+-> Video: view() & shareTo()
+Video by @neck_gro shared to dr.neroifa
+
+=== AFTER ACTIONS ===
+[Photo] @pop_es | caption="sunset vibes" | likes=2 | comments=1 | shares=1 | hashtags=3 | useAI=false | useMusic=true
+[Photo] @kebin_binatang | caption="coffee time" | likes=1 | comments=0 | shares=1 | hashtags=1 | useAI=true | useMusic=false
+[Video] @neck_gro | caption="day in my life as an agent" | likes=1 | comments=0 | shares=1 | views=2 | durationSec=60 | useAI=false
+[Video] @dr.neroifa | caption="lab routine" | likes=0 | comments=0 | shares=0 | views=1 | durationSec=120 | useAI=false
+
+=== INTERFACE AS TYPE (Engageable) ===
+compareEngagement(p1 vs p2) = GREATER (1) (p1 dibanding p2)
+compareEngagement(v1 vs v2) = GREATER (1) (v1 dibanding v2)
+
+=== PostUtil ===
+findHigher(Photo): PhotoPost by @pop_es
+isEqual(Video v1,v2): false
+
+Done.

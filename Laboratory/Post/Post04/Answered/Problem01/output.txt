@@ -1,0 +1,62 @@
+Total agensi: 3
+Total pengguna: 3
+
+Agensi Jaringan Berita menambahkan pelanggan baru.
+Agensi Jaringan Berita menambahkan pelanggan baru.
+Agensi Pusat Informasi Cuaca menambahkan pelanggan baru.
+Agensi Pusat Informasi Cuaca menambahkan pelanggan baru.
+Agensi Pusat Informasi Cuaca menambahkan pelanggan baru.
+Agensi Pusat Informasi Olahraga menambahkan pelanggan baru.
+
+Pengguna Stewart menambahkan kategori 'Politik' untuk agensi Jaringan Berita dengan metode EMAIL.
+Pengguna Stewart menambahkan kategori 'Teknologi' untuk agensi Jaringan Berita dengan metode APP.
+Pengguna Stewart menambahkan kategori 'Badai' untuk agensi Pusat Informasi Cuaca dengan metode SMS.
+
+Pengguna Otto menambahkan kategori 'Sepak Bola' untuk agensi Pusat Informasi Olahraga dengan metode APP.
+Pengguna Otto menambahkan kategori 'Hujan' untuk agensi Pusat Informasi Cuaca dengan metode EMAIL.
+
+
+Agensi Jaringan Berita menyiarkan pembaruan kategori 'Politik': Liputan debat dijadwalkan malam ini.
+[Stewart] dari Jaringan Berita melalui EMAIL - Politik: Liputan debat dijadwalkan malam ini.
+
+Agensi Jaringan Berita menyiarkan pembaruan kategori 'Politik': Hasil pemilu telah masuk.
+[Stewart] dari Jaringan Berita melalui EMAIL - Politik: Hasil pemilu telah masuk.
+
+Agensi Jaringan Berita menyiarkan pembaruan kategori 'Teknologi': Ponsel pintar baru dirilis minggu ini.
+[Stewart] dari Jaringan Berita melalui EMAIL - Teknologi: Ponsel pintar baru dirilis minggu ini.
+
+Agensi Pusat Informasi Cuaca menyiarkan pembaruan kategori 'Hujan': Hujan deras diperkirakan besok.
+[Otto] dari Pusat Informasi Cuaca melalui EMAIL - Hujan: Hujan deras diperkirakan besok.
+
+Agensi Pusat Informasi Cuaca menyiarkan pembaruan kategori 'Badai': Badai tropis mendekati pesisir.
+[Stewart] dari Pusat Informasi Cuaca melalui SMS - Badai: Badai tropis mendekati pesisir.
+
+Agensi Pusat Informasi Olahraga menyiarkan pembaruan kategori 'Sepak Bola': Jadwal liga sepak bola diumumkan.
+[Otto] dari Pusat Informasi Olahraga melalui APP - Sepak Bola: Jadwal liga sepak bola diumumkan.
+
+Agensi Pusat Informasi Olahraga menambahkan pelanggan baru.
+Pengguna Stewart menambahkan kategori 'Sepak Bola' untuk agensi Pusat Informasi Olahraga dengan metode APP.
+
+Agensi Pusat Informasi Olahraga menyiarkan pembaruan kategori 'Sepak Bola': Penyerang bintang menandatangani kontrak baru.
+[Otto] dari Pusat Informasi Olahraga melalui APP - Sepak Bola: Penyerang bintang menandatangani kontrak baru.
+[Stewart] dari Pusat Informasi Olahraga melalui APP - Sepak Bola: Penyerang bintang menandatangani kontrak baru.
+
+Pengguna Otto menghapus kategori 'Hujan' dari agensi Pusat Informasi Cuaca.
+
+Pengguna Otto belum memiliki preferensi untuk agensi Jaringan Berita, kategori 'Ekonomi' diabaikan.
+Agensi Jaringan Berita menyiarkan pembaruan kategori 'Ekonomi': Prospek ekonomi tetap stabil.
+
+Pengguna Stewart belum memiliki preferensi untuk agensi Informasi Antariksa, kategori 'Eksplorasi' diabaikan.
+Agensi Pusat Informasi Cuaca menyiarkan pembaruan kategori 'Cerah': Langit cerah di atas.
+
+Pengguna Gro belum memiliki preferensi untuk agensi Pusat Informasi Cuaca, kategori 'Badai' diabaikan.
+Agensi Pusat Informasi Cuaca menyiarkan pembaruan kategori 'Badai': Sistem badai telah melemah.
+[Stewart] dari Pusat Informasi Cuaca melalui SMS - Badai: Sistem badai telah melemah.
+
+Preferensi untuk agensi Jaringan Berita tidak ditemukan sehingga perubahan metode tidak bisa dilakukan.
+
+Agensi Jaringan Berita menyiarkan pembaruan kategori 'Keuangan': Terkini: reli pasar berlanjut.
+
+Pengguna Gro menambahkan kategori 'Panas' untuk agensi Pusat Informasi Cuaca dengan metode EMAIL.
+Agensi Pusat Informasi Cuaca menyiarkan pembaruan kategori 'Panas': Suhu meningkat di atas rata-rata.
+[Gro] dari Pusat Informasi Cuaca melalui EMAIL - Panas: Suhu meningkat di atas rata-rata.
