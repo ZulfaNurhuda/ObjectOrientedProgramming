@@ -1,0 +1,24 @@
+Toyota Avanza (mobil bensin) melaju dengan kecepatan 120 km/h
+Tesla Model 3 (mobil listrik) melaju dengan daya baterai 80%
+Esemka Bima (mobil hybrid) menggunakan kombinasi bensin dan baterai (60% / 50%)
+Kendaraan: Toyota Avanza
+Kendaraan: Toyota Avanza | Detail: Full Detail
+Toyota Avanza sedang balapan dengan Tesla Model 3
+Mobil Toyota Avanza mengisi bensin. Level saat ini: 70%
+Mobil listrik Tesla Model 3 sedang diisi daya listrik
+Mobil Esemka Bima mengisi bensin. Level saat ini: 60%
+Kendaraan Toyota Avanza mengisi bahan bakar jenis: Pertamax
+Mobil Tesla Model 3 mengisi daya selama 30 menit
+Mobil Tesla Model 3 mengisi daya dengan mode: Fast Mode
+Mobil Esemka Bima beralih ke mode hemat energi
+Mobil Esemka Bima beralih ke mode Sport
+Toyota (Bensin) balapan melawan Tesla (Listrik)
+Tesla (Listrik) balapan melawan Esemka (Hybrid (Bensin + Listrik))
+Esemka (Hybrid (Bensin + Listrik)) balapan melawan Toyota (Bensin)
+Tipe energi: Bensin
+Toyota Avanza (mobil bensin) melaju dengan kecepatan 120 km/h
+Tipe energi: Listrik
+Tesla Model 3 (mobil listrik) melaju dengan daya baterai 80%
+Tipe energi: Hybrid (Bensin + Listrik)
+Esemka Bima (mobil hybrid) menggunakan kombinasi bensin dan baterai (60% / 50%)
+Mobil Toyota mengisi bensin sebanyak 20 liter

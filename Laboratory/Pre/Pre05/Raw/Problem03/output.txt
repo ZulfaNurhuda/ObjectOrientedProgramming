@@ -1,0 +1,132 @@
+=== Welcome to the Pokenimons Battle ===
+
+Initial describe():
+FireNimons @Pyron (FIRE) L1 HP=45
+WaterNimons @Aquon (WATER) L1 HP=48
+GrassNimons @Leafy (GRASS) L1 HP=42
+ElectricNimons @Zappy (ELECTRIC) L1 HP=40
+
+Dynamic Binding: useSkill (tipe unggul/lemah/netral)
+Pyron uses Flamethrower on Leafy (x2)
+Leafy took 24 dmg (HP: 18)
+Aquon uses Water Gun on Pyron (x2)
+Pyron took 24 dmg (HP: 21)
+Pyron uses Flamethrower on Aquon (x0,5)
+Aquon took 6 dmg (HP: 42)
+Zappy uses Thunder Shock on Leafy (x0,5)
+Leafy took 6 dmg (HP: 12)
+Pyron uses Flamethrower on Zappy (x1)
+Zappy took 12 dmg (HP: 28)
+Leafy uses Leaf Blade on Zappy (x1)
+Zappy took 12 dmg (HP: 16)
+
+Marker Interface (RangedAttacker) via attack():
+[MELEE] Pyron uses Tackle on Zappy (x1)
+Zappy took 10 dmg (HP: 6)
+[MELEE] Aquon uses Tackle on Pyron (x2)
+Pyron took 20 dmg (HP: 1)
+[RANGED] Zappy uses Tackle on Leafy (x0,5)
+Leafy took 5 dmg (HP: 7)
+[RANGED] Leafy uses Tackle on Aquon (x2)
+Aquon took 20 dmg (HP: 22)
+
+Level Up + Evolve:
+GrassNimons @Leafy (GRASS) L1 HP=7
+Leafy is not ready to evolve.
+Level up Leafy 7x...
+Leafy leveled up to 2!
+GrassNimons @Leafy (GRASS) L2 HP=12
+Leafy leveled up to 3!
+GrassNimons @Leafy (GRASS) L3 HP=17
+Leafy leveled up to 4!
+GrassNimons @Leafy (GRASS) L4 HP=22
+Leafy leveled up to 5!
+GrassNimons @Leafy (GRASS) L5 HP=27
+Leafy leveled up to 6!
+GrassNimons @Leafy (GRASS) L6 HP=32
+Leafy leveled up to 7!
+GrassNimons @Leafy (GRASS) L7 HP=37
+Leafy leveled up to 8!
+GrassNimons @Leafy (GRASS) L8 HP=42
+Leafy evolves into GrassEvoNimons!
+GrassEvoNimons @Leafy (GRASS) L8 HP=52
+Leafy is already in final form.
+
+FireNimons @Pyron (FIRE) L1 HP=1
+Pyron is not ready to evolve.
+Level up Pyron 9x...
+Pyron leveled up to 2!
+FireNimons @Pyron (FIRE) L2 HP=6
+Pyron leveled up to 3!
+FireNimons @Pyron (FIRE) L3 HP=11
+Pyron leveled up to 4!
+FireNimons @Pyron (FIRE) L4 HP=16
+Pyron leveled up to 5!
+FireNimons @Pyron (FIRE) L5 HP=21
+Pyron leveled up to 6!
+FireNimons @Pyron (FIRE) L6 HP=26
+Pyron leveled up to 7!
+FireNimons @Pyron (FIRE) L7 HP=31
+Pyron leveled up to 8!
+FireNimons @Pyron (FIRE) L8 HP=36
+Pyron leveled up to 9!
+FireNimons @Pyron (FIRE) L9 HP=41
+Pyron leveled up to 10!
+FireNimons @Pyron (FIRE) L10 HP=46
+Pyron evolves into FireEvoNimons!
+FireEvoNimons @Pyron (FIRE) L10 HP=56
+Pyron is already in final form.
+
+ElectricNimons @Zappy (ELECTRIC) L1 HP=6
+Zappy cannot evolve.
+WaterNimons @Aquon (WATER) L1 HP=22
+Aquon cannot evolve.
+
+After Evolution: useSkill() berubah sesuai bentuk baru
+Leafy uses Solar Beam on Brook (x2)
+Brook took 40 dmg (HP: 20)
+Pyron uses Flame Storm on Brook (x0,5)
+Brook took 13 dmg (HP: 7)
+
+Polymorphic Array Loop (semua bertipe Pokenimons):
+ -> Pyron uses Flame Storm on Dummy (x2)
+Dummy took 50 dmg (HP: 75)
+ -> Aquon uses Water Gun on Dummy (x0,5)
+Dummy took 6 dmg (HP: 69)
+ -> Leafy uses Solar Beam on Dummy (x1)
+Dummy took 20 dmg (HP: 49)
+ -> Zappy uses Thunder Shock on Dummy (x0,5)
+Dummy took 6 dmg (HP: 43)
+ -> Flame uses Flamethrower on Dummy (x2)
+Dummy took 24 dmg (HP: 19)
+ -> Pine uses Leaf Blade on Dummy (x1)
+Dummy took 12 dmg (HP: 7)
+
+Fainted guard:
+FireEvoNimons @Pyron (FIRE) L10 HP=56
+ElectricNimons @Zappy (ELECTRIC) L1 HP=6
+GrassNimons @Dummy (GRASS) L1 HP=7
+Pyron uses Flame Storm on Dummy (x2)
+Dummy took 50 dmg (HP: 0)
+Dummy has fainted and cannot be attacked.
+[MELEE] Pyron uses Tackle on Zappy (x1)
+Zappy took 10 dmg (HP: 0)
+Zappy has fainted and cannot act.
+Pyron uses Flame Storm on Flame (x1)
+Flame took 25 dmg (HP: 20)
+Pyron uses Flame Storm on Flame (x1)
+Flame took 25 dmg (HP: 0)
+Flame has fainted and cannot evolve.
+
+Final States:
+Party:
+FireEvoNimons @Pyron (FIRE) L10 HP=56
+WaterNimons @Aquon (WATER) L1 HP=22
+GrassEvoNimons @Leafy (GRASS) L8 HP=52
+ElectricNimons @Zappy (ELECTRIC) L1 HP=0
+FireNimons @Flame (FIRE) L1 HP=0
+GrassNimons @Pine (GRASS) L1 HP=42
+Dummy:
+GrassNimons @Dummy (GRASS) L1 HP=0
+
+=== GAME OVER ===
