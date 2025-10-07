@@ -1,0 +1,52 @@
+=== RESPOND TEST ===
+Customer service bot BotA siap melayani Anda
+Educational bot BotB siap membantu belajar Anda
+Ecommerce bot BotC dari Tokopedia siap melayani Anda
+Math tutor bot BotD untuk subject Calculus siap membantu
+
+=== SESSION TEST ===
+Session started for BotA
+Session started for BotB
+Session started for BotC
+Session started for BotD
+
+=== DISPLAY INFO TEST ===
+Customer Service Bot BotA telah melayani 1 sesi
+Educational Bot BotB telah melayani 1 sesi
+Ecommerce Bot BotC dari Tokopedia telah melayani 1 sesi
+Math Tutor Bot BotD untuk subject Calculus telah melayani 1 sesi
+
+=== SPECIFIC METHOD TEST ===
+Menangani keluhan: Produk tidak sesuai
+Mengajarkan topik: Polymorphism
+Memproses pesanan: Laptop dari Tokopedia
+Menyelesaikan soal Calculus: integral x^2
+
+=== METHOD OVERRIDING TEST ===
+Ecommerce bot BotE dari Shopee siap melayani Anda
+Ecommerce Bot BotE dari Shopee telah melayani 0 sesi
+
+=== INSTANCEOF TEST ===
+Bot Customer Service Bot - Ini adalah CustomerServiceBot
+Menangani keluhan: Test complaint
+Bot Ecommerce Bot - Ini adalah EcommerceBot
+Memproses pesanan: Test Item dari Tokopedia
+Bot Ecommerce Bot - Ini adalah EcommerceBot
+Memproses pesanan: Test Item dari Shopee
+
+=== POLYMORPHIC ARRAY TEST ===
+Ecommerce bot PolyBot1 dari Lazada siap melayani Anda
+Math tutor bot PolyBot2 untuk subject Algebra siap membantu
+
+=== INHERITANCE CHAIN TEST ===
+EcommerceBot extends CustomerServiceBot:
+Menangani keluhan: Layanan lambat
+
+MathTutorBot extends EducationalBot:
+Mengajarkan topik: Algebra
+
+=== DYNAMIC METHOD DISPATCH TEST ===
+Customer service bot DynamicBot1 siap melayani Anda
+Ecommerce bot DynamicBot2 dari Bukalapak siap melayani Anda
+Educational bot DynamicBot3 siap membantu belajar Anda
+Math tutor bot DynamicBot4 untuk subject Physics siap membantu
