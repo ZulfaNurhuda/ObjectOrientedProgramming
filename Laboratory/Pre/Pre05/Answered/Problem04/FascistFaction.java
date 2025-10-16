@@ -1,5 +1,3 @@
-import java.util.Random;
-
 /**
  * POLYMORPHIC IMPLEMENTATION: FascistFaction extends Faction
  * 
@@ -12,7 +10,6 @@ import java.util.Random;
  * - Coordinate secretly to achieve fascist control
  */
 public class FascistFaction extends Faction {
-    private static final Random rand = new Random(43); // Fixed seed for consistency
 
     public FascistFaction() {
         super("Fascist");
@@ -20,52 +17,57 @@ public class FascistFaction extends Faction {
 
     @Override
     public Policy getPreferredDiscard(Policy[] policies) {
-        // Fascists want to prevent liberal policies from being enacted
-        // So they discard liberal policies if possible
-        for (Policy policy : policies) {
-            if (policy == Policy.LIBERAL) {
-                return policy;
+        // MAIN TODO: Implement fascist faction's policy preference
+        // HINT: Fascists want to prevent liberal policies from being enacted, so they
+        // should discard liberal policies if possible
+
+        // TODO: Loop through policies to find the preferred discard type
+        // TODO: Return a default option (first policy) if preferred type not found
+
+        Policy preferredDiscardPolicy = null;
+
+        for (int i = 0; i < policies.length && preferredDiscardPolicy == null; i++) {
+            if (policies[i] == Policy.LIBERAL) {
+                preferredDiscardPolicy = policies[i];
             }
         }
 
-        // If no liberal policy found, discard the first available policy
-        return policies[0];
+        if (preferredDiscardPolicy == null) {
+            preferredDiscardPolicy = policies[0];
+        }
+
+        return preferredDiscardPolicy;
     }
 
     @Override
     public Vote getVoteDecision(Player chancellor, Player president) {
-        // Fascists vote to get their allies into power.
-        boolean isFascistGovernment = chancellor.getFaction() instanceof FascistFaction ||
-                                      president.getFaction() instanceof FascistFaction;
+        // MAIN TODO: Implement fascist faction's voting behavior
+        // HINT: Fascists vote strategically to help other fascists gain power
 
-        if (isFascistGovernment) {
-            // Usually vote YAY for a fascist government.
-            // Occasionally vote NAY to appear less coordinated and more like a liberal.
-            if (rand.nextInt(10) < 9) { // 90% chance to vote YAY
-                return Vote.YAY;
-            } else {
-                return Vote.NAY;
-            }
+        // TODO: Check if the chancellor or president belongs to the fascist faction
+        // TODO: Vote to benefit fascist players and hinder liberal players
+
+        Vote voteDecision = Vote.NAY;
+
+        if (chancellor.getFaction() instanceof FascistFaction || president.getFaction() instanceof FascistFaction) {
+            voteDecision = Vote.YAY;
         }
 
-        // Always vote NAY for a purely liberal government.
-        return Vote.NAY;
+        return voteDecision;
     }
 
     @Override
     public boolean checkWinCondition(int liberalPolicies, int fascistPolicies, boolean hitlerIsChancellor) {
-        // Fascists can win in two ways:
+        // MAIN TODO: Implement fascist win condition check
+        // HINT: Fascists can win in two ways:
+        // 1. By enacting enough fascist policies (6 fascists policies enacted)
+        // 2. By getting Hitler as chancellor when certain conditions are met (3
+        // fascists policies enacted)
 
-        // 1. By enacting 6 fascist policies
-        if (fascistPolicies >= 6) {
-            return true;
-        }
+        // TODO: Check for fascist policy victory condition
+        // TODO: Check for Hitler-chancellor victory condition
+        // TODO: Return true if any win condition is met
 
-        // 2. By getting Hitler as chancellor when 3+ fascist policies are enacted
-        if (fascistPolicies >= 3 && hitlerIsChancellor) {
-            return true;
-        }
-
-        return false;
+        return (fascistPolicies >= 6) || (fascistPolicies >= 3 && hitlerIsChancellor);
     }
 }

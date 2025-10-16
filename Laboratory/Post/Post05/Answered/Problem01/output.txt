@@ -1,0 +1,96 @@
+Pengelola berhasil terdaftar
+Login gagal
+Login gagal
+Login berhasil
+Halo, saya pengelola dengan NIP 200001 dan username user1
+Pengelola dengan username user1 sudah terdaftar
+
+----------------------------AUTH PENGELOLA--------------------------
+
+User belum terdaftar
+User belum terdaftar
+User berhasil terdaftar
+Login berhasil
+Halo, saya mahasiswa domestik PRIA dengan username user2
+Login berhasil
+Halo, saya mahasiswa domestik PRIA dengan username user2
+User dengan username user2 sudah terdaftar
+
+----------------------------AUTH MAHASISWA DOMESTIK--------------------------
+
+User belum terdaftar
+User belum terdaftar
+User berhasil terdaftar
+Login berhasil
+Halo, saya mahasiswa asing dengan username user3 dari negara Kongo
+User dengan username user3 sudah terdaftar
+
+----------------------------AUTH MAHASISWA ASING--------------------------
+
+User berhasil terdaftar
+User berhasil terdaftar
+User berhasil terdaftar
+Asrama Gedung Sangkuriang dengan kapasitas 3
+Mahasiswa user2 diterima di asrama Gedung Sangkuriang
+Mahasiswa asing tidak boleh mendaftar di asrama ini
+Mahasiswa user15 diterima di asrama Gedung Sangkuriang
+Mahasiswa user16 diterima di asrama Gedung Sangkuriang
+Asrama Gedung Sangkuriang sudah penuh
+
+----------------------------ASSIGN ASRAMA SANGKURIANG--------------------------
+
+Asrama Gedung Kidang Pananjung dengan kapasitas 2
+Mahasiswa user2 diterima di asrama Gedung Kidang Pananjung
+Mahasiswa asing tidak boleh mendaftar di asrama ini
+Asrama Gedung Kidang Pananjung hanya untuk mahasiswa laki-laki
+Mahasiswa user16 diterima di asrama Gedung Kidang Pananjung
+Asrama Gedung Kidang Pananjung sudah penuh
+
+----------------------------ASSIGN ASRAMA KIDANG PANANJUNG--------------------------
+
+Asrama Gedung Kanayakan dengan kapasitas 3
+Mahasiswa user2 diterima di asrama Gedung Kanayakan
+Mahasiswa asing tidak boleh mendaftar di asrama ini
+Mahasiswa user15 diterima di asrama Gedung Kanayakan
+Asrama Gedung Kanayakan hanya untuk mahasiswa perempuan
+Mahasiswa user16 diterima di asrama Gedung Kanayakan
+Asrama Gedung Kanayakan sudah penuh
+
+----------------------------ASSIGN ASRAMA KANAYAKAN--------------------------
+
+Asrama Gedung Internasional dengan kapasitas 1
+Mahasiswa domestik tidak boleh mendaftar di asrama ini
+Mahasiswa user3 diterima di asrama Gedung Internasional
+Asrama Gedung Internasional sudah penuh
+
+----------------------------ASSIGN ASRAMA INTERNASIONAL--------------------------
+
+Asrama Gedung Kanayakan dengan kapasitas 3
+Pendaftaran mahasiswa user2 telah diverifikasi oleh pengelola user1
+Mahasiswa user2 tinggal di Asrama Gedung Kanayakan dengan kapasitas 3
+
+Asrama Gedung Internasional dengan kapasitas 1
+Pendaftaran mahasiswa user3 telah diverifikasi oleh pengelola user1
+Mahasiswa user3 tinggal di Asrama Gedung Internasional dengan kapasitas 1
+
+Asrama Gedung Kanayakan dengan kapasitas 3
+Pendaftaran mahasiswa user16 telah diverifikasi oleh pengelola user1
+Mahasiswa user16 tinggal di Asrama Gedung Kanayakan dengan kapasitas 3
+
+Asrama Gedung Kanayakan dengan kapasitas 3
+Pendaftaran mahasiswa user15 telah diverifikasi oleh pengelola user1
+Mahasiswa user15 tinggal di Asrama Gedung Kanayakan dengan kapasitas 3
+
+Mahasiswa sudah terdaftar di asrama lain
+Mahasiswa user16 tinggal di Asrama Gedung Kanayakan dengan kapasitas 4
+
+Mahasiswa sudah terdaftar di asrama lain
+Mahasiswa user2 tinggal di Asrama Gedung Kanayakan dengan kapasitas 4
+
+Mahasiswa sudah terdaftar di asrama lain
+Mahasiswa user15 tinggal di Asrama Gedung Kanayakan dengan kapasitas 4
+
+Mahasiswa sudah terdaftar di asrama lain
+Mahasiswa user3 tinggal di Asrama Gedung Internasional dengan kapasitas 2
+
+----------------------------TERIMA PENDAFTARAN--------------------------

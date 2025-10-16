@@ -1,5 +1,3 @@
-import java.util.Random;
-
 /**
  * POLYMORPHIC IMPLEMENTATION: LiberalFaction extends Faction
  * 
@@ -11,7 +9,6 @@ import java.util.Random;
  * - Prevent fascist takeover and Hitler becoming chancellor
  */
 public class LiberalFaction extends Faction {
-    private static final Random rand = new Random(42); // Fixed seed for consistency
 
     public LiberalFaction() {
         super("Liberal");
@@ -19,34 +16,47 @@ public class LiberalFaction extends Faction {
 
     @Override
     public Policy getPreferredDiscard(Policy[] policies) {
-        // Liberals want to prevent fascist policies from being enacted
-        // So they discard fascist policies if available
-        for (Policy policy : policies) {
-            if (policy == Policy.FASCIST) {
-                return policy;
+        // MAIN TODO: Implement liberal faction's policy preference
+        // HINT: Liberals want to prevent fascist policies from being enacted
+
+        // TODO: Loop through policies to find the preferred discard type
+        // TODO: Return a default option (first policy) if preferred type not found
+
+        Policy preferredDiscardPolicy = null;
+
+        for (int i = 0; i < policies.length && preferredDiscardPolicy == null; i++) {
+            if (policies[i] == Policy.FASCIST) {
+                preferredDiscardPolicy = policies[i];
             }
         }
 
-        // If no fascist policy found, discard the first available policy
-        return policies[0];
+        if (preferredDiscardPolicy == null) {
+            preferredDiscardPolicy = policies[0];
+        }
+
+        return preferredDiscardPolicy;
     }
 
     @Override
     public Vote getVoteDecision(Player chancellor, Player president) {
-        // Liberals don't know who is who, so they vote with some skepticism.
-        // They are more likely to vote YAY, but will sometimes vote NAY to be safe.
-        // This simulates a degree of distrust without any specific information.
-        if (rand.nextInt(10) < 8) { // 80% chance to vote YAY
-            return Vote.YAY;
-        } else {
-            return Vote.NAY;
-        }
+        // MAIN TODO: Implement liberal faction's voting behavior
+        // HINT: Liberals generally trust other players since they don't know who
+        // fascists are
+
+        // TODO: Always vote YAY as a simple trusting strategy
+
+        return Vote.YAY;
     }
 
     @Override
     public boolean checkWinCondition(int liberalPolicies, int fascistPolicies, boolean hitlerIsChancellor) {
-        // Liberals win if they enact 5 liberal policies
-        // (Hitler being killed is handled elsewhere in GameManager)
+        // STUDENT TODO: Implement liberal win condition check
+        // HINT: Liberals can win in one ways:
+        // 1. By enacting enough liberal policies (5 Policies)
+
+        // TODO: Check if liberals have won based on policy count
+        // TODO: Return true if win condition is met, false otherwise
+
         return liberalPolicies >= 5;
     }
 }

@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 /**
@@ -18,91 +16,81 @@ public class HitlerPlayer extends Player {
 
     public HitlerPlayer(String name, int id) {
         super(name, id);
-        // Hitler belongs to the Fascist faction
-        this.faction = new FascistFaction();
-        // Set the Hitler flag
-        this.isHitler = true;
+        // TODO: Initialize the faction and Hitler status for this player
+        // HINT: What faction does Hitler belong to?
+        // HINT: Don't forget to set the isHitler flag!
+        this.faction = new FascistFaction(); // STUDENT TODO: Replace with appropriate faction
+        super.setHitler(true); // STUDENT TODO: Set the isHitler flag appropriately
     }
 
     @Override
     public Policy discardPolicy(Policy[] policies) {
-        // Hitler's goal is to enact fascist policies while appearing liberal.
-        // He will usually discard liberal policies, but sometimes discard a fascist one
-        // to sow confusion and build trust with unsuspecting liberals.
+        // STUDENT TODO: Implement Hitler's policy discarding strategy
+        // HINT: Hitler wants fascist policies to pass, but must be subtle about it
+        // Consider: Should Hitler behave exactly like a fascist, or differently?
 
-        boolean hasLiberal = false;
-        boolean hasFascist = false;
-        for (Policy policy : policies) {
-            if (policy == Policy.LIBERAL) {
-                hasLiberal = true;
-            } else {
-                hasFascist = true;
-            }
-        }
+        // TODO: Decide which policy Hitler should discard
+        // TODO: Consider that Hitler wants fascist policies but must avoid suspicion
 
-        // If there's no choice, just discard what's available.
-        if (!hasLiberal || !hasFascist) {
-            return policies[0];
-        }
-
-        // With a mix of policies, decide deceptively.
-        // 70% chance to discard a Liberal policy (to help Fascists).
-        if (rand.nextInt(10) < 7) {
-            return Policy.LIBERAL;
-        } else {
-            // 30% chance to discard a Fascist policy (to appear Liberal).
-            return Policy.FASCIST;
-        }
+        return this.faction.getPreferredDiscard(policies); // STUDENT TODO: Replace with actual implementation
     }
 
     @Override
     public Vote vote(Player chancellor, Player president) {
-        // Hitler doesn't know who other fascists are (important game rule!)
-        // Hitler must appear unpredictable to avoid detection
-        // Vote randomly to stay hidden
+        // STUDENT TODO: Implement Hitler's voting behavior
+        // HINT: Hitler doesn't know who other fascists are (important game rule!)
+        // HINT: Hitler must appear unpredictable to avoid detection
+        // Consider: Should Hitler vote consistently or randomly?
 
-        if (rand.nextBoolean()) {
-            return Vote.YAY;
-        } else {
-            return Vote.NAY;
-        }
+        // TODO: Implement a voting strategy that helps Hitler stay hidden
+        // TODO: Use the Random object (rand) to make unpredictable choices
+
+        return rand.nextBoolean() ? Vote.YAY : Vote.NAY; // STUDENT TODO: Replace with YAY or NAY
     }
 
     @Override
     public Player chooseChancellor(Player[] availablePlayers) {
-        // Hitler doesn't know his allies. To avoid suspicion, he must act
-        // like a liberal would, which means choosing randomly. A predictable
-        // choice could reveal him.
-        List<Player> candidates = new ArrayList<>();
-        for (Player player : availablePlayers) {
-            if (player.isAlive() && player.getId() != this.getId()) {
-                candidates.add(player);
+        // STUDENT TODO: Implement chancellor selection for Hitler
+        // HINT: Hitler DOES NOT know who the other fascists are!
+        // Consider: How should Hitler choose without this knowledge?
+        // Consider: What strategy would help Hitler avoid suspicion?
+
+        // TODO: Choose a chancellor without knowing other players' factions
+        // TODO: Make sure chosen player is alive and not yourself
+
+        Player chosenChancellor = null;
+
+        for (int i = 0; i < availablePlayers.length && chosenChancellor == null; i++) {
+            Player player = availablePlayers[i];
+            if (player.isAlive() && player != this) {
+                chosenChancellor = player;
             }
         }
 
-        if (candidates.isEmpty()) {
-            return null;
-        }
-
-        // Use the static rand for this choice
-        return candidates.get(rand.nextInt(candidates.size()));
+        return chosenChancellor; // STUDENT TODO: Replace with chosen player
     }
 
     @Override
     public Player choosePlayerToKill(Player[] availablePlayers) {
-        // Hitler does NOT know who other fascists are (crucial game rule!)
-        // Must choose randomly to avoid revealing identity
-        List<Player> targets = new ArrayList<>();
-        for (Player player : availablePlayers) {
-            if (player.isAlive() && player.getId() != this.getId()) {
-                targets.add(player);
+        // STUDENT TODO: Implement player elimination strategy for Hitler
+        // HINT: Hitler does NOT know who other fascists are (crucial game rule!)
+        // HINT: Hitler must choose without knowledge of other players' roles
+        // Consider: Random selection might be the only option
+
+        // TODO: Choose a player to eliminate without faction knowledge
+        // TODO: Use the Random object (rand) for unpredictable selection
+        // TODO: Make sure chosen player is alive and not yourself
+
+        Player playerToKill = null;
+
+        while (playerToKill == null) {
+            int randomIndex = rand.nextInt(availablePlayers.length);
+            Player player = availablePlayers[randomIndex];
+            if (player.isAlive() && player != this) {
+                playerToKill = player;
             }
         }
 
-        if (targets.isEmpty()) {
-            return null;
-        }
-
-        return targets.get(rand.nextInt(targets.size()));
+        return playerToKill; // STUDENT TODO: Replace with chosen player
     }
 }

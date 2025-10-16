@@ -1,4 +1,3 @@
 public enum Vote {
-    YAY,
-    NAY
+    YAY, NAY
 }
