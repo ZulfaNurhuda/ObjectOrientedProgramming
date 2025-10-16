@@ -1,0 +1,64 @@
+=== Welcome to THEATER SHOW Demo ===
+
+Show created:
+  Title : My Sunshine
+  Venue : Grand Hall
+  Date  : 2025-10-16
+  Time  : 19:00
+  Cap   : 25
+
+Seat mapping examples (1-based):
+  Seat 1 -> A1  | available=true
+  Seat 20 -> A20 | available=true
+  Seat 21 -> B1  | available=true
+  Seat 25 -> B5  | available=true
+  Seat 26 -> B6  | available=false
+
+Add performers:
+  Added JUNIOR x2
+  (Coba bandingkan harga tiket sebelum & sesudah ada SENIOR)
+
+Draft -> Confirm (kursi 1, REGULAR, tanpa SENIOR):
+  Valid draft? true
+  Ticket issued:
+   [TK-000001] Aulia | My Sunshine on Grand Hall at 2025-10-16 19:00 | Seat A1 [REGULAR] | Rp100000
+  Sold so far: 1
+
+Add 1 SENIOR performer, then draft VIP on seat 2:
+  Valid draft? true
+  Ticket issued:
+   [TK-000002] Budiman | My Sunshine on Grand Hall at 2025-10-16 19:00 | Seat A2 [VIP] | Rp200000
+  Sold so far: 2
+
+Try double-booking seat 2 (should return null):
+  Result: NULL (blocked)
+
+Issue quickly (no draft): seat 21 PRESALE
+  Ticket issued:
+   [TK-000003] Desi | My Sunshine on Grand Hall at 2025-10-16 19:00 | Seat B1 [PRESALE] | Rp130000
+  Sold so far: 3
+
+Try last seat (capacity = 25):
+  isSeatAvailable(25) -> true
+  issueTicket(last) -> [TK-000004] Eko | My Sunshine on Grand Hall at 2025-10-16 19:00 | Seat B5 [REGULAR] | Rp150000
+
+Seat mapping (first 2 rows):
+A1  A2  A3  A4  A5  A6  A7  A8  A9  A10 A11 A12 A13 A14 A15 A16 A17 A18 A19 A20
+B1  B2  B3  B4  B5
+
+ID Generator is GLOBAL across shows:
+  [TK-000005] Fina | Teenage Girls on Red Theater at 2025-11-03 14:00 | Seat A1 [REGULAR] | Rp100000
+  [TK-000006] Gilang | Teenage Girls on Red Theater at 2025-11-03 14:00 | Seat A2 [REGULAR] | Rp100000
+
+=== SUMMARY ===
+Show        : My Sunshine @ Grand Hall
+Date & Time : 2025-10-16 19:00
+Capacity    : 25
+Sold        : 4
+
+Other Show  : Teenage Girls @ Red Theater
+Date & Time : 2025-11-03 14:00
+Capacity    : 10
+Sold        : 2
+
+=== END DEMO ===

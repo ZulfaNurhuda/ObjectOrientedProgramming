@@ -1,4 +1,3 @@
 public enum Policy {
-    LIBERAL,
-    FASCIST
+    LIBERAL, FASCIST
 }

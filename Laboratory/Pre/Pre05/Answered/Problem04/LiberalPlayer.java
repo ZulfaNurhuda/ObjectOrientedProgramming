@@ -1,7 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-
 /**
  * POLYMORPHIC IMPLEMENTATION: LiberalPlayer extends Player
  * 
@@ -31,37 +27,46 @@ public class LiberalPlayer extends Player {
 
     @Override
     public Player chooseChancellor(Player[] availablePlayers) {
-        // Liberals don't know who is who, so they choose a chancellor randomly.
-        // This avoids predictable patterns that could be exploited.
-        List<Player> candidates = new ArrayList<>();
-        for (Player player : availablePlayers) {
-            if (player.isAlive() && player.getId() != this.getId()) {
-                candidates.add(player);
+        // MAIN TODO: Implement chancellor selection for liberals
+        // HINT: Liberals don't know who fascists are, so they can't make informed
+        // choices
+        // HINT: 'this' is yourself
+
+        // TODO: Loop through available players to nominate as chancellor
+        // TODO: Make sure the chosen player is the first player found that is alive and
+        // not yourself
+
+        Player choosenChancellor = null;
+
+        for (int i = 0; i < availablePlayers.length && choosenChancellor == null; i++) {
+            Player player = availablePlayers[i];
+            if (player.isAlive() && player != this) {
+                choosenChancellor = availablePlayers[i];
             }
         }
 
-        if (candidates.isEmpty()) {
-            return null;
-        }
-
-        return candidates.get(new Random(this.getId() ^ System.nanoTime()).nextInt(candidates.size()));
+        return choosenChancellor; // STUDENT TODO: Replace with chosen player
     }
 
     @Override
     public Player choosePlayerToKill(Player[] availablePlayers) {
-        // As a liberal with no information, the fairest and least predictable
-        // strategy is to choose a player to kill at random.
-        List<Player> targets = new ArrayList<>();
-        for (Player player : availablePlayers) {
-            if (player.isAlive() && player.getId() != this.getId()) {
-                targets.add(player);
+        // MAIN TODO: Implement player elimination strategy for liberals
+        // HINT: Liberals don't know who fascists are, so they must choose without
+        // information
+
+        // TODO: Implement a strategy to choose a player to eliminate
+        // TODO: Make sure the chosen player is the first player found that is alive and
+        // not yourself
+
+        Player playerToKill = null;
+
+        for (int i = 0; i < availablePlayers.length && playerToKill == null; i++) {
+            Player player = availablePlayers[i];
+            if (player.isAlive() && player != this) {
+                playerToKill = availablePlayers[i];
             }
         }
 
-        if (targets.isEmpty()) {
-            return null;
-        }
-
-        return targets.get(new Random(this.getId() ^ System.nanoTime()).nextInt(targets.size()));
+        return playerToKill;
     }
 }

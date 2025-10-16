@@ -1,0 +1,14 @@
+== Perplexity chatbot ==
+User: Hi there!
+Bot : [WebWidget] Perplexity: Hey! Hi friend! Awesome to hear from you.
+User: How do I reset my password?
+Bot : [WebWidget] Perplexity: Hey! Great question! Let's explore: How do I reset my password?
+User: 
+Bot : [WebWidget] Perplexity: Hey! I might need a hint to answer that.
+== Grok chatbot ==
+User: Hi there!
+Bot : [WebWidget] Grok: Hey! Greetings, it's Grok. How may I assist you today?
+User: How do I reset my password?
+Bot : [WebWidget] Grok: Hey! Here is the information requested: How do I reset my password?
+User: 
+Bot : [WebWidget] Grok: Hey! Please be clear about your request.

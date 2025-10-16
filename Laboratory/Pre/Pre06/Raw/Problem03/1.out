@@ -1,0 +1,50 @@
+===== Testing CardGame =====
+Ace of Hearts (Value: 11)
+King of Spades (Value: 10)
+Kartu ditambahkan ke deck UNO
+Kartu ditambahkan ke deck UNO
+Kartu ditambahkan ke deck UNO
+Deck UNO berisi 3 kartu:
+Ace of Hearts (Value: 11)
+King of Spades (Value: 10)
+Queen of Diamonds (Value: 10)
+Kartu yang diambil: Queen of Diamonds (Value: 10)
+Deck UNO dikocok
+Deck UNO berisi 2 kartu:
+Ace of Hearts (Value: 11)
+King of Spades (Value: 10)
+Alice menerima kartu di game UNO
+Alice menerima kartu di game UNO
+Alice memiliki 2 kartu:
+Ace of Hearts (Value: 11)
+King of Spades (Value: 10)
+Alice memiliki total score: 21
+Alice memainkan kartu:
+Ace of Hearts (Value: 11)
+Alice memiliki 1 kartu:
+King of Spades (Value: 10)
+Game UNO dimulai dengan 4 pemain maksimal!
+Game UNO dimulai dengan 3 ronde!
+
+===== Testing PokerGame =====
+Game Poker dimulai! Blind amount: 100
+PokerPro menerima kartu di game Poker
+PokerPro menerima kartu di game Poker
+PokerPro memiliki 2 kartu:
+Ace of Hearts (Value: 11)
+King of Spades (Value: 10)
+Mengevaluasi hand pemain PokerPro untuk Poker
+Hand rank: HIGH_CARD
+
+===== Testing BlackjackGame =====
+Game Blackjack dimulai! Minimum bet: 500
+Dealer membagikan kartu kepada semua pemain
+Bob menerima kartu di game Blackjack
+Bob menerima kartu di game Blackjack
+Bob memiliki 2 kartu:
+Ten of Hearts (Value: 10)
+Jack of Clubs (Value: 11)
+Player Bob mengambil kartu tambahan
+Player Bob tidak mengambil kartu lagi
+Bob memiliki total score: 21
+BLACKJACK! Bob menang!
