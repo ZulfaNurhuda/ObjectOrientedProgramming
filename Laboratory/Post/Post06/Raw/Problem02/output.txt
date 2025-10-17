@@ -1,0 +1,24 @@
+=== Daftar Kereta Tersedia ===
+1. Argo Parahyangan (Sisa kursi: 3/3)
+2. Lodaya (Sisa kursi: 2/2)
+3. Taksaka (Sisa kursi: 1/1)
+
+Booking berhasil: BK1001 | Penumpang 1 | Lodaya | 2025-10-17T10:00
+Kereta tidak ditemukan: Mutiara Selatan
+Booking berhasil: BK1002 | Penumpang 2 | Lodaya | 2025-10-17T10:00
+Kursi penuh pada kereta: Lodaya
+
+=== Daftar Semua Booking ===
+BK1001 | Penumpang 1 | Lodaya | 2025-10-17T10:00
+BK1002 | Penumpang 2 | Lodaya | 2025-10-17T10:00
+
+=== Pembatalan Booking ===
+Booking BK1002 berhasil dibatalkan.
+
+=== Daftar Semua Booking ===
+BK1001 | Penumpang 1 | Lodaya | 2025-10-17T10:00
+
+=== Daftar Kereta Tersedia ===
+1. Argo Parahyangan (Sisa kursi: 3/3)
+2. Lodaya (Sisa kursi: 1/2)
+3. Taksaka (Sisa kursi: 1/1)
