@@ -17,8 +17,8 @@ public class DataAnalytics {
     public static <T> void copyData(Container<? extends T> source, Container<? super T> destination) {
         System.out.println("Menyalin data dari " + source.getName() + " ke " + destination.getName() + "...");
         int count = 0;
-        for (T item: source.getItems()) {
-            destination.add(item);
+        for (int i = 0; i < source.size(); i++) {
+            destination.add(source.get(i));
             count++;
         }
         System.out.println("Berhasil menyalin " + count + " item");
@@ -40,12 +40,12 @@ public class DataAnalytics {
         Container<T> result = new Container<T>(newName);
         System.out.println("Menggabungkan " + c1.getName() + " dan " + c2.getName() + "...");
         int total = 0;
-        for (T item : c1.getItems()) {
-            result.add(item);
+        for (int i = 0; i < c1.size(); i++) {
+            result.add(c1.get(i));
             total++;
         }
-        for (T item : c2.getItems()) {
-            result.add(item);
+        for (int i = 0; i < c2.size(); i++) {
+            result.add(c2.get(i));
             total++;
         }
         System.out.println("Berhasil menggabungkan " + total + " item");
@@ -61,12 +61,10 @@ public class DataAnalytics {
     // Implementasi:
     // - Tampilkan: "=== Isi Container ==="
     // - Panggil container.display()
-    // - Tampilkan: "==================="
-
+    // - Tampilkan: "====================="
     public static void printContainer(Container<?> container) {
         System.out.println("=== Isi Container ===");
         container.display();
-        System.out.println("===================");
+        System.out.println("=====================");
     }
-
 }
