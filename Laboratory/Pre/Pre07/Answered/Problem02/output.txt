@@ -1,0 +1,4 @@
+Numeric champion between 12 and 9 is: 12
+Lexicographic champion between Alice and Bob is: Bob
+Head-to-head champion between Alice(80) and Bob(95) is: Bob(95)
+Champion among Alice(80), Bob(95), and Carol(98) is: Carol(98)
