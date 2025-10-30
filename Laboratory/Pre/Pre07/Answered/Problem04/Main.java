@@ -113,10 +113,8 @@ public class Main {
         String transformerName = scanner.nextLine();
         String targetContainerName = scanner.nextLine();
 
-        DataTransformer<Integer, String> transformer =
-            new DataTransformer<>(transformerName);
-        Container<String> transformedContainer =
-            new Container<>(targetContainerName);
+        DataTransformer<Integer, String> transformer = new DataTransformer<>(transformerName);
+        Container<String> transformedContainer = new Container<>(targetContainerName);
 
         // Transform Integer ke String dengan format khusus
         transformer.transform(intContainer, transformedContainer, new TransformFunction<Integer, String>() {
