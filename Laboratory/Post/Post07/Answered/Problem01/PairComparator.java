@@ -5,7 +5,7 @@ public final class PairComparator {
     // 1. Lengkapi parameter generik method yang merupakan kelas-kelas yang
     // menerapkan interface Comparable
     // 2. Lengkapi parameter generik dari pair yang dibandingkan
-    public static <T extends Comparable, U extends Comparable> boolean isGreater(Pair<T, U> p1, Pair<T, U> p2) {
+    public static <T extends Comparable<? super T>, U extends Comparable<? super U>> boolean isGreater(Pair<T, U> p1, Pair<T, U> p2) {
         // TODO:
         // 1. Bandingkan elemen pertama dan kedua antar pair menggunakan compareTo().
         // 2. Kembalikan true hanya jika kedua perbandingan menunjukkan p1 lebih besar
