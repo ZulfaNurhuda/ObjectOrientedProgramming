@@ -78,7 +78,7 @@ public class NasiGoreng extends MenuItem {
      * @return ArrayList<String> dari topping
      */
     public ArrayList<String> getTopping() {
-        return new ArrayList<String>(topping);
+        return topping;
     }
 
     /**
