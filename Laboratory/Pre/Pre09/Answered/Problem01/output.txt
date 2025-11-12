@@ -1,0 +1,280 @@
+
+【DEMO 1: Adding Items to Inventory】
+Added Excalibur Sword to position A1
+Added Health Potion to position A2
+Added Dragon Armor to position B1
+Added Elven Bow to position B3
+Added Iron Shield to position C2
+Added Mana Potion to position D1
+Added Ruby Gem to position D3
+Added Teleport Scroll to position E1
+Added Steel Helmet to position E2
+Added Magic Ring to position A3
+
+=== INVENTORY GRID ===
+Capacity: 10/20 slots
+Weight: 38.1/100.0 kg
+
+    1              2              3              4              
+   ------------------------------------------------------------
+A | Excalibur Sw   Health Potio   Magic Ring     [Empty]        
+B | Dragon Armor   [Empty]        Elven Bow      [Empty]        
+C | [Empty]        Iron Shield    [Empty]        [Empty]        
+D | Mana Potion    [Empty]        Ruby Gem       [Empty]        
+E | Teleport Scr   Steel Helmet   [Empty]        [Empty]        
+
+
+【DEMO 2: Detailed Inventory】
+
+=== DETAILED INVENTORY ===
+[A1] Excalibur Sword [Weapon] x1 (Weight: 5.5, Rarity: 5*)
+[A2] Health Potion [Consumable] x10 (Weight: 0.2, Rarity: 2*)
+[A3] Magic Ring [Accessory] x1 (Weight: 0.1, Rarity: 5*)
+[B1] Dragon Armor [Armor] x1 (Weight: 15.0, Rarity: 5*)
+[B3] Elven Bow [Weapon] x1 (Weight: 2.5, Rarity: 4*)
+[C2] Iron Shield [Armor] x1 (Weight: 8.0, Rarity: 3*)
+[D1] Mana Potion [Consumable] x5 (Weight: 0.2, Rarity: 2*)
+[D3] Ruby Gem [Material] x3 (Weight: 0.1, Rarity: 4*)
+[E1] Teleport Scroll [Consumable] x2 (Weight: 0.1, Rarity: 3*)
+[E2] Steel Helmet [Armor] x1 (Weight: 3.5, Rarity: 2*)
+
+
+【DEMO 3: Search Operations】
+
+--- Search by name 'Potion' ---
+[A2] Health Potion [Consumable] x10 (Weight: 0.2, Rarity: 2*)
+[D1] Mana Potion [Consumable] x5 (Weight: 0.2, Rarity: 2*)
+
+--- Filter by type 'Weapon' ---
+[A1] Excalibur Sword [Weapon] x1 (Weight: 5.5, Rarity: 5*)
+[B3] Elven Bow [Weapon] x1 (Weight: 2.5, Rarity: 4*)
+
+--- Filter by rarity >= 4 (Legendary & Epic) ---
+[A1] Excalibur Sword [Weapon] x1 (Weight: 5.5, Rarity: 5*)
+[A3] Magic Ring [Accessory] x1 (Weight: 0.1, Rarity: 5*)
+[B1] Dragon Armor [Armor] x1 (Weight: 15.0, Rarity: 5*)
+[B3] Elven Bow [Weapon] x1 (Weight: 2.5, Rarity: 4*)
+[D3] Ruby Gem [Material] x3 (Weight: 0.1, Rarity: 4*)
+
+【DEMO 4: Sorting Operations】
+
+--- Sort by Name (Alphabetical) ---
+[B1] Dragon Armor
+[B3] Elven Bow
+[A1] Excalibur Sword
+[A2] Health Potion
+[C2] Iron Shield
+[A3] Magic Ring
+[D1] Mana Potion
+[D3] Ruby Gem
+[E2] Steel Helmet
+[E1] Teleport Scroll
+
+--- Sort by Rarity (Highest first) ---
+[A1] Excalibur Sword (5*)
+[A3] Magic Ring (5*)
+[B1] Dragon Armor (5*)
+[B3] Elven Bow (4*)
+[D3] Ruby Gem (4*)
+[C2] Iron Shield (3*)
+[E1] Teleport Scroll (3*)
+[A2] Health Potion (2*)
+[D1] Mana Potion (2*)
+[E2] Steel Helmet (2*)
+
+--- Sort by Weight (Lightest first) ---
+[A3] Magic Ring (0.05 kg)
+[D3] Ruby Gem (0.1 kg)
+[E1] Teleport Scroll (0.1 kg)
+[A2] Health Potion (0.2 kg)
+[D1] Mana Potion (0.2 kg)
+[B3] Elven Bow (2.5 kg)
+[E2] Steel Helmet (3.5 kg)
+[A1] Excalibur Sword (5.5 kg)
+[C2] Iron Shield (8.0 kg)
+[B1] Dragon Armor (15.0 kg)
+
+【DEMO 5: Advanced Filtering】
+
+--- Top 3 Heaviest Items ---
+[B1] Dragon Armor - 15.0 kg
+[C2] Iron Shield - 8.0 kg
+[A1] Excalibur Sword - 5.5 kg
+
+--- Top 3 Lightest Items ---
+[A3] Magic Ring - 0.05 kg
+[D3] Ruby Gem - 0.1 kg
+[E1] Teleport Scroll - 0.1 kg
+
+--- Legendary Items (5*) ---
+[A1] Excalibur Sword [Weapon] x1 (Weight: 5.5, Rarity: 5*)
+[A3] Magic Ring [Accessory] x1 (Weight: 0.1, Rarity: 5*)
+[B1] Dragon Armor [Armor] x1 (Weight: 15.0, Rarity: 5*)
+
+【DEMO 6: Statistics】
+
+=== INVENTORY STATISTICS ===
+Total Items: 10
+Empty Slots: 10
+Current Weight: 38.1 kg
+Average Item Weight: 3.5 kg
+Average Rarity: 3.50*
+
+--- Items by Type ---
+Weapon: 2 items
+Consumable: 3 items
+Accessory: 1 items
+Armor: 3 items
+Material: 1 items
+
+--- Rarity Distribution ---
+1*: 0 items
+2*: 3 items
+3*: 2 items
+4*: 2 items
+5*: 3 items
+
+--- Total Quantity by Type ---
+Weapon: 2 total units
+Consumable: 17 total units
+Accessory: 1 total units
+Armor: 3 total units
+Material: 3 total units
+
+【DEMO 7: Moving Items】
+
+Moving Excalibur Sword from A1 to C1...
+Removed Excalibur Sword from position A1
+Added Excalibur Sword to position C1
+
+=== INVENTORY GRID ===
+Capacity: 10/20 slots
+Weight: 38.1/100.0 kg
+
+    1              2              3              4              
+   ------------------------------------------------------------
+A | [Empty]        Health Potio   Magic Ring     [Empty]        
+B | Dragon Armor   [Empty]        Elven Bow      [Empty]        
+C | Excalibur Sw   Iron Shield    [Empty]        [Empty]        
+D | Mana Potion    [Empty]        Ruby Gem       [Empty]        
+E | Teleport Scr   Steel Helmet   [Empty]        [Empty]        
+
+
+【DEMO 8: Auto-Add to First Empty Slot】
+Added Ancient Tome to position A1
+First empty slot: A4
+
+【DEMO 9: Check Operations】
+Has 'Dragon Armor'? true
+Has 'Wooden Stick'? false
+Total items: 11
+Empty slots: 9
+
+【DEMO 10: Filter by Weight Range】
+
+--- Items between 0.1 kg and 5.0 kg ---
+[A1] Ancient Tome - 1.5 kg
+[A2] Health Potion - 0.2 kg
+[B3] Elven Bow - 2.5 kg
+[D1] Mana Potion - 0.2 kg
+[D3] Ruby Gem - 0.1 kg
+[E1] Teleport Scroll - 0.1 kg
+[E2] Steel Helmet - 3.5 kg
+
+【DEMO 11: Removing Item】
+
+Removing item from B3...
+Removed Elven Bow from position B3
+Removed: Elven Bow [Weapon] x1 (Weight: 2.5, Rarity: 4*)
+
+=== INVENTORY GRID ===
+Capacity: 10/20 slots
+Weight: 37.1/100.0 kg
+
+    1              2              3              4              
+   ------------------------------------------------------------
+A | Ancient Tome   Health Potio   Magic Ring     [Empty]        
+B | Dragon Armor   [Empty]        [Empty]        [Empty]        
+C | Excalibur Sw   Iron Shield    [Empty]        [Empty]        
+D | Mana Potion    [Empty]        Ruby Gem       [Empty]        
+E | Teleport Scr   Steel Helmet   [Empty]        [Empty]        
+
+
+【DEMO 12: Stacking Similar Items】
+Added Health Potion to position B2
+
+Before stacking:
+
+=== DETAILED INVENTORY ===
+[A1] Ancient Tome [Book] x1 (Weight: 1.5, Rarity: 4*)
+[A2] Health Potion [Consumable] x10 (Weight: 0.2, Rarity: 2*)
+[A3] Magic Ring [Accessory] x1 (Weight: 0.1, Rarity: 5*)
+[B1] Dragon Armor [Armor] x1 (Weight: 15.0, Rarity: 5*)
+[B2] Health Potion [Consumable] x5 (Weight: 0.2, Rarity: 2*)
+[C1] Excalibur Sword [Weapon] x1 (Weight: 5.5, Rarity: 5*)
+[C2] Iron Shield [Armor] x1 (Weight: 8.0, Rarity: 3*)
+[D1] Mana Potion [Consumable] x5 (Weight: 0.2, Rarity: 2*)
+[D3] Ruby Gem [Material] x3 (Weight: 0.1, Rarity: 4*)
+[E1] Teleport Scroll [Consumable] x2 (Weight: 0.1, Rarity: 3*)
+[E2] Steel Helmet [Armor] x1 (Weight: 3.5, Rarity: 2*)
+
+Stacked 2 instances of Health Potion
+
+After stacking:
+
+=== DETAILED INVENTORY ===
+[A1] Ancient Tome [Book] x1 (Weight: 1.5, Rarity: 4*)
+[A2] Health Potion [Consumable] x15 (Weight: 0.2, Rarity: 2*)
+[A3] Magic Ring [Accessory] x1 (Weight: 0.1, Rarity: 5*)
+[B1] Dragon Armor [Armor] x1 (Weight: 15.0, Rarity: 5*)
+[C1] Excalibur Sword [Weapon] x1 (Weight: 5.5, Rarity: 5*)
+[C2] Iron Shield [Armor] x1 (Weight: 8.0, Rarity: 3*)
+[D1] Mana Potion [Consumable] x5 (Weight: 0.2, Rarity: 2*)
+[D3] Ruby Gem [Material] x3 (Weight: 0.1, Rarity: 4*)
+[E1] Teleport Scroll [Consumable] x2 (Weight: 0.1, Rarity: 3*)
+[E2] Steel Helmet [Armor] x1 (Weight: 3.5, Rarity: 2*)
+
+
+【FINAL INVENTORY STATE】
+
+=== INVENTORY GRID ===
+Capacity: 10/20 slots
+Weight: 38.1/100.0 kg
+
+    1              2              3              4              
+   ------------------------------------------------------------
+A | Ancient Tome   Health Potio   Magic Ring     [Empty]        
+B | Dragon Armor   [Empty]        [Empty]        [Empty]        
+C | Excalibur Sw   Iron Shield    [Empty]        [Empty]        
+D | Mana Potion    [Empty]        Ruby Gem       [Empty]        
+E | Teleport Scr   Steel Helmet   [Empty]        [Empty]        
+
+
+=== INVENTORY STATISTICS ===
+Total Items: 10
+Empty Slots: 10
+Current Weight: 38.1 kg
+Average Item Weight: 3.4 kg
+Average Rarity: 3.50*
+
+--- Items by Type ---
+Book: 1 items
+Consumable: 3 items
+Accessory: 1 items
+Armor: 3 items
+Weapon: 1 items
+Material: 1 items
+
+--- Rarity Distribution ---
+1*: 0 items
+2*: 3 items
+3*: 2 items
+4*: 2 items
+5*: 3 items
+
+
+【DEMO 13: Occupied Positions】
+Occupied positions: [A1, A2, A3, E1, D1, E2, C1, B1, C2, D3]
+
+【DEMO 14: All Items Collection】
+Total unique items in inventory: 10

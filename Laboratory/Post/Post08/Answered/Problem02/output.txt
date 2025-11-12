@@ -1,0 +1,35 @@
+[START] endpoint /checkout
+400 Bad Request: productId kosong
+[END] endpoint /checkout
+
+[START] endpoint /checkout
+400 Bad Request: productId kosong
+[END] endpoint /checkout
+
+[START] endpoint /checkout
+400 Bad Request: qty harus > 0
+[END] endpoint /checkout
+
+[START] endpoint /checkout
+400 Bad Request: card kosong
+[END] endpoint /checkout
+
+[START] endpoint /checkout
+400 Bad Request: card kosong
+[END] endpoint /checkout
+
+[START] endpoint /checkout
+402 Payment Required: Payment failed via gateway | cause=IOException
+[END] endpoint /checkout
+
+[START] endpoint /checkout
+200 OK
+[END] endpoint /checkout
+
+[START] endpoint /checkout
+409 Conflict: Stock 1 < 2
+[END] endpoint /checkout
+
+[START] endpoint /checkout
+404 Not Found: Product P404 not found
+[END] endpoint /checkout
