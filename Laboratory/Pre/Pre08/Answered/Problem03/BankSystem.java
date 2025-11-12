@@ -63,7 +63,6 @@ public class BankSystem {
         System.out.println("Daftar Akun:");
         if (count == 0) {
             System.out.println("(tidak ada akun)");
-            return;
         } else {
             for (int i = 0; i < count; i++) {
                 System.out.println("- " + accounts[i]);

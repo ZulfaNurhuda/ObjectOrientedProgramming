@@ -49,7 +49,7 @@ public class BankAccount {
        Tidak ada nilai kembalian. */
     public void withdraw(double amount) throws InvalidAmountException, InsufficientBalanceException {
         // Type your code
-        if (amount < 0.0) {
+        if (amount < 0) {
             throw new InvalidAmountException("Nominal penarikan tidak boleh negatif.");
         }
         if (balance < amount) {
