@@ -1,0 +1,4 @@
+Initial Queue: [10, 20, 30, 40, 50]
+Reversed Queue: [50, 40, 30, 20, 10]
+Reversed First K Elements Queue: [20, 10, 30, 40, 50]
+Reversed Last K Elements Queue: [10, 20, 30, 50, 40]
