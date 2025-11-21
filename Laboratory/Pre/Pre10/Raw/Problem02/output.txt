@@ -1,0 +1,17 @@
+P0 memperoleh CPU
+P0 melepas CPU
+P0 memperoleh IO0
+P0 melepas IO0
+P0 memperoleh CPU
+P0 melepas CPU
+P0 selesai
+P1 memperoleh CPU
+P1 melepas CPU
+P1 memperoleh IO1
+P1 melepas IO1
+P1 memperoleh CPU
+P1 melepas CPU
+P1 selesai
+P2 memperoleh CPU
+P2 melepas CPU
+P2 dibatalkan saat memakai resource IO0

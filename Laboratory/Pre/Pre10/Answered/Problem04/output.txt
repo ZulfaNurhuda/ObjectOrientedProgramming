@@ -1,0 +1,23 @@
+=== Producer & Worker ===
+Producer generated request #1
+Worker-1 memproses request #1
+Producer generated request #2
+Worker-2 memproses request #2
+Producer generated request #3
+Worker-2 memproses request #3
+Producer generated request #4
+Worker-1 memproses request #4
+Producer generated request #5
+Worker-2 memproses request #5
+Producer generated request #6
+Worker-1 memproses request #6
+Producer generated request #7
+Worker-1 memproses request #7
+=== Deadlock Simulator ===
+Menunggu deadlock 20ms
+Menunggu deadlock 40ms
+Menunggu deadlock 60ms
+Menunggu deadlock 80ms
+Menunggu deadlock 100ms
+deadlock!
+Program selesai
